@@ -1,0 +1,264 @@
+Assembly_Accession,Organism_Name
+GCF_037993035.2,Macaca fascicularis
+GCF_019923935.1,Bubalus bubalis
+GCF_028858775.2,Pan troglodytes
+GCF_029281585.2,Gorilla gorilla gorilla
+GCF_028885625.2,Pongo pygmaeus
+GCF_028878055.3,Symphalangus syndactylus
+GCF_000001405.40,Homo sapiens
+GCF_000001635.27,Mus musculus
+GCF_036323735.1,Rattus norvegicus
+GCF_000003025.6,Sus scrofa
+GCF_002263795.3,Bos taurus
+GCF_011100685.1,Canis lupus familiaris
+GCF_003254725.2,Canis lupus dingo
+GCF_048164855.1,Canis lupus baileyi
+GCF_003339765.1,Macaca mulatta
+GCF_016772045.2,Ovis aries
+GCF_001704415.2,Capra hircus
+GCF_964237555.1,Oryctolagus cuniculus
+GCF_041296265.1,Equus caballus
+GCF_018350175.1,Felis catus
+GCF_003668045.3,Cricetulus griseus
+GCF_029378745.1,Bos indicus
+GCF_011100555.1,Callithrix jacchus
+GCF_047675955.1,Chlorocebus sabaeus
+GCF_011064425.1,Rattus rattus
+GCF_027887165.1,Monodelphis domestica
+GCF_008728515.1,Papio anubis
+GCF_043159975.1,Macaca nemestrina
+GCF_016881025.1,Ictidomys tridecemlineatus
+GCF_041296235.1,Equus asinus
+GCF_002007445.2,Ailuropoda melanoleuca
+GCF_011762595.2,Tursiops truncatus
+GCF_003704035.1,Peromyscus maniculatus bairdii
+GCF_004115265.2,Rhinolophus ferrumequinum
+GCF_024166365.1,Elephas maximus indicus
+GCF_018350195.1,Panthera tigris
+GCF_036321535.1,Camelus dromedarius
+GCF_028372415.1,Notamacropus eugenii
+GCF_020171115.1,Neogale vison
+GCF_902635505.1,Sarcophilus harrisii
+GCF_003369695.1,Bos indicus x Bos taurus
+GCF_048564905.1,Vicugna pacos
+GCF_030254825.1,Meriones unguiculatus
+GCF_000317375.1,Microtus ochrogaster
+GCF_040802235.1,Manis javanica
+GCF_048418805.1,Vulpes vulpes
+GCF_030445035.2,Dasypus novemcinctus
+GCF_030014295.1,Loxodonta africana
+GCF_004664715.2,Peromyscus leucopus
+GCA_949782905.1,Rangifer tarandus platyrhynchus
+GCF_004115215.2,Ornithorhynchus anatinus
+GCF_023065955.2,Ursus arctos
+GCF_007565055.1,Rhinopithecus roxellana
+GCF_910594005.1,Cervus elaphus
+GCF_028885655.2,Pongo abelii
+GCF_027580195.1,Bos mutus
+GCF_018345385.1,Vulpes lagopus
+GCF_030020395.1,Manis pentadactyla
+GCF_015852505.1,Tachyglossus aculeatus
+GCF_963930625.1,Muntiacus reevesi
+GCF_023699985.2,Odocoileus virginianus
+GCF_016509475.1,Prionailurus bengalensis
+GCA_028583565.1,Ovis ammon polii
+GCF_027475565.1,Acinonyx jubatus
+GCF_018350215.1,Panthera leo
+GCF_028021215.1,Eschrichtius robustus
+GCF_006542625.1,Nomascus leucogenys
+GCF_022682495.2,Desmodus rotundus
+GCF_042477335.2,Ovis canadensis
+GCF_029289425.2,Pan paniscus
+GCF_047511655.1,Castor canadensis
+GCF_030435755.1,Ochotona princeps
+GCF_027595985.1,Sorex araneus
+GCF_000165445.2,Microcebus murinus
+GCF_002837175.3,Physeter macrocephalus
+GCF_023159225.1,Perognathus longimembris pacificus
+GCF_922984935.1,Meles meles
+GCF_047511675.1,Marmota flaviventris
+GCF_027574615.1,Eptesicus fuscus
+GCF_937001465.1,Orcinus orca
+GCF_009762305.2,Zalophus californianus
+GCF_902655055.1,Lutra lutra
+GCF_037783145.1,Equus przewalskii
+GCF_902686445.1,Sciurus carolinensis
+GCF_011762505.1,Arvicanthis niloticus
+GCF_963924675.1,Phocoena phocoena
+GCF_028533385.1,Panthera onca
+GCF_949987535.1,Balaenoptera acutorostrata
+GCF_030028045.1,Hippopotamus amphibius kiboko
+GCF_024542745.1,Macaca thibetana thibetana
+GCF_021613505.1,Equus quagga
+GCF_029407905.1,Bubalus kerabau
+GCF_028018385.1,Neofelis nebulosa
+GCF_033115175.1,Lepus europaeus
+GCF_026419965.1,Kogia breviceps
+GCF_027406575.1,Nycticebus coucang
+GCF_019393635.1,Dromiciops gliroides
+GCF_020740605.2,Lemur catta
+GCF_020740685.1,Jaculus jaculus
+GCF_015220235.1,Choloepus didactylus
+GCF_004126475.2,Phyllostomus discolor
+GCF_009873245.2,Balaenoptera musculus
+GCA_047834645.1,Nasalis larvatus
+GCF_011100635.1,Trichosurus vulpecula
+GCF_949987515.2,Delphinus delphis
+GCF_950295315.1,Erinaceus europaeus
+GCF_023721935.1,Panthera uncia
+GCF_006229205.1,Suricata suricatta
+GCF_020826845.1,Diceros bicornis minor
+GCF_030435805.1,Mustela lutreola
+GCA_023701675.1,Ovis ammon polii x Ovis aries
+GCF_033118175.1,Dama dama
+GCF_022837055.1,Prionailurus viverrinus
+GCF_023091745.1,Budorcas taxicolor
+GCF_028564815.1,Eubalaena glacialis
+GCF_009829155.1,Mustela erminea
+GCF_008692025.1,Phocoena sinus
+GCF_009834535.1,Camelus ferus
+GCF_947179515.1,Apodemus sylvaticus
+GCF_963455315.2,Globicephala melas
+GCF_963259705.1,Myotis daubentonii
+GCF_903995425.1,Onychomys torridus
+GCF_019320065.1,Cervus canadensis
+GCF_003255815.1,Theropithecus gelada
+GCA_008782695.1,Muntiacus muntjak
+GCF_022355385.1,Mustela nigripes
+GCF_900095145.1,Mus pahari
+GCF_018350155.1,Leopardus geoffroyi
+GCF_032405125.1,Capricornis sumatraensis
+GCA_031835075.1,Saguinus oedipus
+GCF_041146395.1,Eulemur rufifrons
+GCF_027409185.1,Cynocephalus volans
+GCF_039906515.1,Pseudorca crassidens
+GCF_016432865.1,Antechinus flavipes
+GCF_025265405.1,Mesoplodon densirostris
+GCF_032452875.1,Bos javanicus
+GCF_028023285.1,Balaenoptera ricei
+GCF_950005125.1,Chionomys nivalis
+GCF_036850765.1,Saccopteryx bilineata
+GCF_036850995.1,Saccopteryx leptura
+GCF_016906955.1,Phacochoerus africanus
+GCF_007474595.2,Lynx canadensis
+GCF_903992535.2,Arvicola amphibius
+GCF_024139225.1,Suncus etruscus
+GCF_903995435.1,Acomys russatus
+GCF_949774975.1,Lagenorhynchus albirostris
+GCF_949786415.1,Peromyscus eremicus
+GCA_010411085.1,Cervus hanglu yarkandensis
+GCF_002201575.2,Neomonachus schauinslandi
+GCF_002776525.5,Piliocolobus tephrosceles
+GCF_900094665.2,Mus caroli
+GCF_008632895.1,Mastomys coucha
+GCA_963693515.1,Pipistrellus nathusii
+GCA_040437455.1,Plecturocebus cupreus
+GCF_016433145.1,Gracilinanus agilis
+GCF_017311325.1,Ursus maritimus
+GCF_017639785.1,Mesocricetus auratus
+GCF_034190915.1,Cavia porcellus
+GCF_011764305.1,Mustela putorius furo
+GCF_000247695.1,Heterocephalus glaber
+GCF_000767855.1,Camelus bactrianus
+GCF_022376915.1,Moschus berezovskii
+GCF_002099425.1,Phascolarctos cinereus
+GCF_021218885.2,Marmota monax
+GCF_902806735.1,Myodes glareolus
+GCF_000334495.1,Tupaia chinensis
+GCF_000147115.1,Myotis lucifugus
+GCF_021234435.1,Artibeus jamaicensis
+GCF_020975775.1,Ursus americanus
+GCF_029215605.1,Mirounga angustirostris
+GCF_002288925.2,Delphinapterus leucas
+GCF_905146905.1,Nyctereutes procyonoides
+GCF_014176215.1,Rousettus aegyptiacus
+GCF_000325575.1,Pteropus alecto
+GCF_000283155.1,Ceratotherium simum simum
+GCF_017591425.1,Ochotona curzoniae
+GCF_003426925.1,Urocitellus parryii
+GCA_044048945.1,Daubentonia madagascariensis
+GCA_045298715.1,Apodemus speciosus
+GCF_000622305.1,Nannospalax galili
+GCF_003031525.2,Neophocaena asiaeorientalis asiaeorientalis
+GCF_000754665.1,Bison bison bison
+GCF_902729225.1,Pteropus vampyrus
+GCF_014885135.2,Alexandromys fortis
+GCF_003327715.1,Puma concolor
+GCF_000151845.1,Pteropus vampyrus
+GCA_001675575.1,Neotoma lepida
+GCF_007827085.1,Peromyscus californicus insignis
+GCF_002288905.1,Enhydra lutris kenyoni
+GCF_943737965.1,Phodopus roborovskii
+GCF_014108235.1,Myotis myotis
+GCF_004028035.1,Eumetopias jubatus
+GCF_009761245.1,Sapajus apella
+GCF_012274545.1,Fukomys damarensis
+GCF_001890085.2,Hipposideros armiger
+GCF_000696425.1,Galeopterus variegatus
+GCF_000260255.1,Octodon degus
+GCF_022079265.1,Lynx rufus
+GCF_030222135.1,Aotus nancymaae
+GCA_041156055.1,Ovibos moschatus
+GCF_019186645.2,Phyllostomus hastatus
+GCF_028538775.1,Myotis yumanensis
+GCF_009764315.1,Trachypithecus francoisi
+GCF_024711535.1,Dipodomys merriami
+GCF_005190385.1,Monodon monoceros
+GCF_000955945.1,Cercocebus atys
+GCF_907164565.1,Psammomys obesus
+GCF_000164805.1,Carlito syrichta
+GCF_000243295.1,Trichechus manatus latirostris
+GCF_001698545.2,Rhinopithecus bieti
+GCF_000181295.1,Otolemur garnettii
+GCA_011754075.1,Pontoporia blainvillei
+GCF_024362965.1,Panthera pardus
+GCF_016699345.2,Saimiri boliviensis boliviensis
+GCF_000321225.1,Odobenus rosmarus divergens
+GCF_028583685.1,Petaurus breviceps papuanus
+GCF_018167655.1,Microtus oregoni
+GCF_021234165.1,Pteronotus mesoamericanus
+GCF_014108415.1,Molossus molossus
+GCA_047655295.1,Semnopithecus entellus
+GCF_014108245.1,Pipistrellus kuhlii
+GCF_019054845.1,Dipodomys spectabilis
+GCF_012393455.1,Halichoerus grypus
+GCF_003009895.1,Hyaena hyaena
+GCF_004348235.1,Phoca vitulina
+GCF_009828535.3,Hylobates moloch
+GCF_011800145.1,Mirounga leonina
+GCF_900497805.2,Vombatus ursinus
+GCA_008692635.1,Crocuta crocuta
+GCF_000276665.1,Chinchilla lanigera
+GCF_001604975.1,Cebus imitator
+GCF_000951045.1,Mandrillus leucophaeus
+GCF_000956105.1,Propithecus coquereli
+GCF_000313985.2,Echinops telfairi
+GCF_000327345.1,Myotis davidii
+GCA_024510155.1,Gulo gulo luscus
+GCF_003676395.1,Sagmatias obliquidens
+GCF_001458135.2,Marmota marmota marmota
+GCF_029834395.1,Sorex fumeus
+GCF_014898055.3,Talpa occidentalis
+GCF_014824575.3,Sturnira hondurensis
+GCF_010015895.1,Lontra canadensis
+GCF_014754425.2,Oryx dammah
+GCF_003265705.2,Callorhinus ursinus
+GCF_014898765.1,Puma yagouaroundi
+GCA_019455555.1,Galemys pyrenaicus
+GCF_004785775.1,Grammomys surdaster
+GCF_000151885.1,Dipodomys ordii
+GCF_000260355.1,Condylura cristata
+GCF_000951035.1,Colobus angolensis palliatus
+GCF_000442215.2,Lipotes vexillifer
+GCF_001595765.1,Miniopterus natalensis
+GCF_000299155.1,Elephantulus edwardii
+GCF_000349705.1,Leptonychotes weddellii
+GCF_000412655.1,Myotis brandtii
+GCF_000296735.1,Chrysochloris asiatica
+GCF_000298275.1,Orycteropus afer afer
+GCA_030846915.1,Cnephaeus nilssonii
+GCA_049901635.1,Scotinomys teguina
+GCA_032199065.1,Smutsia gigantea
+GCA_900661375.1,Lynx pardinus
+GCF_020171115.1,Neovison vison
+GCF_902729225.1,Pteropus giganteus
