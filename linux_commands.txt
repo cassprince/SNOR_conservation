@@ -1,0 +1,73 @@
+### --- GENOME ASSEMBLY DATA AND TAXONOMY --- ###
+
+# Download NCBI annotated reference fungal protein sequences.
+datasets download genome taxon fungi --include protein --dehydrated --reference --filename fungi.zip  
+unzip fungi.zip -d fungi 
+datasets rehydrate --directory fungi --gzip  
+gzip -r -d ./ 
+find . -type f -exec cat {} + > /workdir/crp86/snor/fungi_prot.fasta
+
+# Download NCBI annotated reference fungal genomes.
+datasets download genome taxon fungi --include genome --dehydrated --reference --annotated --filename fungi.zip  
+unzip fungi.zip -d fungi 
+datasets rehydrate --directory fungi --gzip  
+gzip -r -d ./ 
+find . -type f -exec cat {} + > /workdir/crp86/fungi.fasta 
+
+# Download NCBI annotated reference mammalian protein sequences.
+datasets download genome taxon mammalia --include protein --reference --filename mammalia_prot_2.zip 
+unzip mammalia_prot_2.zip -d mammalia_prot_2 
+find . -type f -exec cat {} + > /workdir/crp86/mammalia_prot.fasta 
+
+# Download fungal genome metadata.
+datasets summary genome taxon fungi –reference --annotated --as-json-lines | dataformat tsv genome --fields accession,organism-name,organism-tax-id,assminfo-level,assmstats-gc-percent,assmstats-number-of-contigs,assmstats-number-of-scaffolds,checkm-completeness > fungi_metadata.tsv 
+
+# Download NCBI Taxonomy data for all fungal genomes using NCBI taxids.
+awk '{FS="\t";OFS="\t"}{print $3}' fungi_metadata.tsv > taxids.txt 
+datasets summary taxonomy taxon --inputfile taxids.txt --as-json-lines | dataformat tsv taxonomy --template summary 
+
+# Get all NCBI Nucleotide database accessions within each assembly file.
+find . -name \*.fna -exec cp {} /workdir/crp86/fungi_genomes \;
+grep '>' *.fna /dev/null > GCF_nuc_accessions_reps.txt 
+
+
+
+
+### --- 18S TREE --- ###
+
+# Prepare BLAST database.
+makeblastdb -in fungi.fasta -dbtype nucl -parse_seqids
+
+# BLAST for 18S rRNA genes (queried using S. cerevisiae and Encephalitozoon cuniculi 18S rRNA gene).
+blastn -db fungi.fasta -query 18S.fasta -max_target_seqs 50000 -perc_identity 50 -qcov_hsp_perc 50 -evalue 0.05 -task blastn -outfmt 7 -out 18S_blast_50.csv   
+
+# Removed duplicates in R.
+# Extract 18S sequences according to the subject start and end values in the BLAST output. 
+awk '{OFS="\t"}{print $2,$9,$10}' 18S_blast_30_nd.tsv | xargs -n 3 sh -c 'blastdbcmd -db fungi.fasta -entry "$0" -range "$1"-"$2" -outfmt %f >> 18S_plus.fasta' 
+awk '{OFS="\t"}{print $2,$9,$10}' 18S_blast_30_nd.tsv | xargs -n 3 sh -c 'blastdbcmd -db fungi.fasta -entry "$0" -range "$2"-"$1" -outfmt %f >> 18S_minus.fasta' 
+
+# Reverse complement 18S sequences that were on the minus strand and combine with sequences on the plus strand.
+/workdir/crp86/fungi_blast/seqtk/seqtk seq -r 18S_minus.fasta > 18S_minus_R.fasta 
+cat 18S_plus.fasta 18S_minus_R.fasta > 18S_all.fasta 
+
+# Align 18S genes with MAFFT.
+/programs/mafft/bin/mafft 18S_all.fasta > 18S_align.fasta 
+
+# Build the maximum-likelihood tree with FastTree.
+/programs/FastTree-2.1.10/FastTree -nt -gtr -gamma 18S_align.fasta > 18S_fasttree.tre 
+
+
+
+
+
+### --- SEARCH FOR SNOR PROTEINS --- ###
+
+## Example of HMMER search and protein sequence length calculation for fungi. Repeated with same options and different database for mammals.
+# Building HMMER query and protein search with hmmsearch. 
+/programs/mafft/bin/mafft queries.fasta > queries_align.fasta   
+/programs/hmmer-3.3/bin/hmmbuild queries.hmm queries_align.fasta 
+/programs/hmmer-3.3/bin/hmmsearch --tblout snor_HMMER_5e2.csv -E 5e-2 queries.hmm fungi_prot.fasta 
+
+# Determine protein lengths of initial hits.
+awk '{FS=" ";OFS=" "}{print $1}' snor_HMMER_5e2.csv > prot_hits.txt # Then, extract protein hit fastas by submitting prot_hits.txt to NCBI Batch Entrez https://www.ncbi.nlm.nih.gov/sites/batchentrez 
+seqkit fx2tab --length --name --header-line snor_hit_proteins.fasta 
